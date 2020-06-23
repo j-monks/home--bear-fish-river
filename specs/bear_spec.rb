@@ -23,6 +23,7 @@ class BearTest < MiniTest::Test
     def test_bear_eats_fish()
         @bear.bear_eats_fish(@river)
         assert_equal(1, @bear.food_count())
+        assert_equal(2, @river.fish_count())
     end
 
 end
